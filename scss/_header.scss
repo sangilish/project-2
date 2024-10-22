@@ -1,0 +1,39 @@
+header {
+    background-color: $secondary-color;
+    padding: $base-padding 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darken($secondary-color, 10%);
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: $text-color;
+  
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  
+    .menu-button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      padding: $base-padding 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }

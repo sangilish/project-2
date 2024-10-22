@@ -1,0 +1,39 @@
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 20px;
+  
+    .footer-links {
+      a {
+        color: $secondary-color;
+        margin-right: 15px;
+        text-decoration: none;
+  
+        &:hover {
+          color: lighten($secondary-color, 20%);
+        }
+      }
+    }
+  
+    .subscribe {
+      input {
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        border: 1px solid lighten($text-color, 30%);
+      }
+  
+      button {
+        background-color: $accent-color;
+        color: $secondary-color;
+        padding: $base-padding 20px;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: lighten($accent-color, 10%);
+        }
+      }
+    }
+  }

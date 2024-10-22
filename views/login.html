@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Create an Account</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/views/home.html" class="logo">Logo</a>
+      <ul class="nav-links">
+        <li><a href="/views/event_creation.html">Create Event</a></li>
+        <li><a href="/views/rsvp_management.html">My Events</a></li>
+        <li><a href="/views/rsvp_management.html">Event Options</a></li>
+      </ul>
+      <button class="menu-button">Menu</button>
+    </nav>
+  </header>
+
+  <section class="login-signup-container">
+    <h2>Login & Create an Account</h2>
+    <form id="login-signup-form" action="/auth" method="POST">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    <p id="message"></p> <!-- 서버에서의 응답 메시지를 표시할 공간 -->
+  </section>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Event Planning</a>
+        <a href="#">User Support</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+      </div>
+      <div class="subscribe">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <p>&copy; 2024 All rights reserved.</p>
+  </footer>
+</body>
+</html>

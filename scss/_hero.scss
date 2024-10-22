@@ -1,0 +1,25 @@
+.hero, .event-hero, .rsvp-management, .welcome {
+    background-color: $background-color;
+    text-align: center;
+    padding: 50px;
+  
+    h1, h2 {
+      font-size: 32px;
+      color: $text-color;
+    }
+  
+    .cta-buttons {
+      button {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: $base-padding 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+    }
+  }

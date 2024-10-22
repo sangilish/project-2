@@ -1,0 +1,29 @@
+.features, .step-by-step, .secure-access, .social-login, .track-rsvps, .filter-events, .rsvp-update {
+    padding: $section-padding;
+    text-align: center;
+  }
+  
+  .features .feature-cards, .content-block {
+    display: flex;
+    justify-content: space-around;
+  
+    .card, .step, .text-section {
+      background-color: lighten($background-color, 10%);
+      padding: 20px;
+      width: 30%;
+      text-align: left;
+      border: 1px solid darken($background-color, 5%);
+  
+      h3 {
+        margin-bottom: 10px;
+      }
+  
+      button {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: $base-padding 20px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }

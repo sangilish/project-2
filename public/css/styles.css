@@ -1,0 +1,216 @@
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(229.5, 229.5, 229.5);
+}
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+header .nav-links {
+  list-style: none;
+  display: flex;
+}
+header .nav-links li {
+  margin-right: 20px;
+}
+header .nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
+header .nav-links li a:hover {
+  color: #007bff;
+}
+header .menu-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero, .event-hero, .rsvp-management, .welcome {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px;
+}
+.hero h1, .hero h2, .event-hero h1, .event-hero h2, .rsvp-management h1, .rsvp-management h2, .welcome h1, .welcome h2 {
+  font-size: 32px;
+  color: #333;
+}
+.hero .cta-buttons button, .event-hero .cta-buttons button, .rsvp-management .cta-buttons button, .welcome .cta-buttons button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+.hero .cta-buttons button:hover, .event-hero .cta-buttons button:hover, .rsvp-management .cta-buttons button:hover, .welcome .cta-buttons button:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.features, .step-by-step, .secure-access, .social-login, .track-rsvps, .filter-events, .rsvp-update {
+  padding: 40px;
+  text-align: center;
+}
+
+.features .feature-cards, .content-block {
+  display: flex;
+  justify-content: space-around;
+}
+.features .feature-cards .card, .features .feature-cards .step, .features .feature-cards .text-section, .content-block .card, .content-block .step, .content-block .text-section {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  text-align: left;
+  border: 1px solid rgb(231.25, 231.25, 231.25);
+}
+.features .feature-cards .card h3, .features .feature-cards .step h3, .features .feature-cards .text-section h3, .content-block .card h3, .content-block .step h3, .content-block .text-section h3 {
+  margin-bottom: 10px;
+}
+.features .feature-cards .card button, .features .feature-cards .step button, .features .feature-cards .text-section button, .content-block .card button, .content-block .step button, .content-block .text-section button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form form, .rsvp-update-form form {
+  display: inline-block;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+.contact-form form input, .contact-form form textarea, .rsvp-update-form form input, .rsvp-update-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(127.5, 127.5, 127.5);
+  border-radius: 4px;
+}
+.contact-form form input:focus, .contact-form form textarea:focus, .rsvp-update-form form input:focus, .rsvp-update-form form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.contact-form form button, .rsvp-update-form form button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.contact-form form button:hover, .rsvp-update-form form button:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer .footer-links a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+footer .footer-links a:hover {
+  color: white;
+}
+footer .subscribe input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(127.5, 127.5, 127.5);
+}
+footer .subscribe button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+footer .subscribe button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+
+/*# sourceMappingURL=styles.css.map */
+/* Login/Signup Form Container */
+.login-container, .signup-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container, .signup-container {
+    margin: 20px;
+  }
+}
