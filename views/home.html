@@ -4,35 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Event Planner</title>
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-<header>
+  <header>
     <nav>
-    <a href="home.html" class="logo">Logo</a>
-    <ul class="nav-links">
-        <li><a href="event_creation.html">Create Event</a></li>
-        <li><a href="rsvp_management.html">My Events</a></li>
-        <li><a href="rsvp_management.html">Event Options</a></li>
-    </ul>
-        <button class="menu-button">Menu</button>
+      <a href="/" class="logo">Logo</a>
+      <ul class="nav-links">
+        <li><a href="/event_creation.html">Create Event</a></li>
+        <li><a href="/rsvp_management.html">My Events</a></li>
+        <li><a href="/rsvp_management.html">Event Options</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+      <button class="menu-button">Menu</button>
     </nav>
-</header>
+  </header>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, (err) => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 
   <section class="hero">
     <div class="hero-content">
       <h1>Effortless Event Management at Your Fingertips</h1>
       <p>Plan, organize, and manage your events seamlessly with our intuitive platform.</p>
       <div class="cta-buttons">
-        <a href="login.html">
+        <a href="/login">
           <button>Create</button>
         </a>
-        <a href="login.html">
+        <a href="/login">
           <button>Sign Up</button>
         </a>
       </div>
     </div>
-    <div class="hero-image"></div>
   </section>
 
   <section class="features">
@@ -83,10 +96,6 @@
         <a href="#">FAQs</a>
         <a href="#">Contact Us</a>
         <a href="#">About Us</a>
-      </div>
-      <div class="subscribe">
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
       </div>
     </div>
     <p>&copy; All rights reserved.</p>

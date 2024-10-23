@@ -4,21 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Your Event</title>
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">Logo</div>
       <ul class="nav-links">
-        <li><a href="#">Create Event</a></li>
-        <li><a href="#">My Events</a></li>
-        <li><a href="#">Event Options</a></li>
+        <li><a href="/event_creation.html">Create Event</a></li>
+        <li><a href="/rsvp_management.html">My Events</a></li>
+        <li><a href="/rsvp_management.html">Event Options</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
       </ul>
       <button class="menu-button">Menu</button>
     </nav>
   </header>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, (err) => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+  
   <section class="event-hero">
     <h1>Create Your Event</h1>
     <p>Enter your event details below to start planning an unforgettable experience.</p>
